@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+.carousel{
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  max-width: 80rem;
+  max-height: 40rem;
+  margin: 5rem auto;
+}
+
+.carousel .carousel-hidden{
+  display: none;
+}
+
+.carousel-image img{
+  width: 100%;
+  height: auto;
+}
+
+.carousel-visible{
+  display: block;
+  animation: nextImg .5s;
+}
+
+.carousel-buttons{
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.btn-image{
+  width: 2rem;
+}
+
+.button{
+  height: 5rem;
+  width: 5rem;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+  background: rgb(213, 242, 243);
+  opacity: .75;
+}
+
+.button:hover{
+  opacity: .9 ;
+}
+
+#prev{
+  margin-left: 2rem;
+}
+
+#next{
+  margin-right: 2rem;
+}
+
+.carousel-nav{
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  z-index: 1;
+  width: 100%;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.carousel-indicator{
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  border: 0;
+  background: rgb(213, 242, 243);
+  margin: 0 .5rem;
+  cursor: pointer;
+}
+
+.carousel-indicator.current{
+  background-color: rgb(96, 238, 243);
+}
+
+@keyframes nextImg{
+  0%{
+    opacity: .5;
+    }
+  80%{
+      opacity: 1;
+  }
+}

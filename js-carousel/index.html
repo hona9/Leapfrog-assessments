@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./img/title-logo.png">
+  <link rel="stylesheet" href="./style.css">
+  <title>Image Carousel</title>
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-image carousel-visible">
+      <img src="./img/1.jpg" alt="img1">
+    </div>
+    <div class="carousel-image">
+      <img src="./img/2.jpg" alt="img2">
+    </div>
+    <div class="carousel-image">
+      <img src="./img/3.jpg" alt="img3">
+    </div>
+      
+    <div class="carousel-buttons">
+      <button class="button" id="prev"><img class="btn-image" src="./img/icon-arrow-left.svg" alt="Previous"></button>
+      <button class="button" id="next"><img class="btn-image" src="./img/icon-arrow-right.svg" alt="Next"></button>
+    </div>
+    <div class="carousel-nav">
+      <button id="btn1" class="carousel-indicator current"></button>
+      <button id="btn2" class="carousel-indicator"></button>
+      <button id="btn3" class="carousel-indicator"></button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,181 @@
+*, 
+*:before,
+*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: sans-serif;
+}
+
+.container{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hold-container{
+  margin-top: 3rem;
+  margin-right: 3rem;
+}
+
+.next-container{
+  margin-top: 3rem;
+  margin-left: 3rem;
+}
+
+.container-background{
+  background-color: darkgray;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.title{
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: .8rem;
+}
+
+.title div{
+  background-color: black;
+  width: 100%;
+  border-radius: 2rem;
+  margin-top: .2rem;
+}
+
+.extra{
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+
+.menu{
+  margin-top: 5rem;
+  margin-left: 3rem;
+  max-width: 22rem;
+  height: 7rem;
+}
+
+.buttons{
+  border: 0;
+  padding: .8rem 2rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.buttons:hover{
+  border: 1px solid white;
+}
+
+#play{
+  background-color: rgb(68, 206, 64);
+}
+
+#option{
+  background-color: rgb(65, 130, 173);
+}
+
+.controls, .desired-section, .scoreBoard{
+  background-color: #414141;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: .5rem solid white;
+  border-radius: 2rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.controls{
+  height: 30rem;
+  width: 40rem;
+  z-index: 5;
+}
+
+.desired-section{
+  width: 25rem;
+  height: 15rem;
+  z-index: 10;
+  text-align: center;
+}
+
+#cancel-button{
+  margin-top: 3rem;
+}
+
+.controls .control-options{
+  display: flex;
+  justify-content: space-between;
+}
+
+.controls.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.desired-section.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#applyChanges{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: gray;
+  cursor: pointer;
+}
+
+#overlay{
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.scoreBoard{
+  z-index: 10;
+  text-align: center;
+}
+
+.scoreBoard.active{
+  transform: translate(-50%, -50%) scale(1);
+}
+
+#newHighScore{
+  color: aquamarine;
+}
+
+#newHighScore.active{
+  display: block;
+}
+
+#newHighScore.inactive{
+  display: none;
+}
+
+.gameOverscore{
+  font-size: 8rem;
+  color: bisque;
+}

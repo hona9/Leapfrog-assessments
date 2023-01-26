@@ -1,0 +1,142 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header{
+    width: 100%;
+    background-color: #27292f;
+    padding: 3rem 0;
+}
+
+.header__logo-box{
+    padding-left: 2rem;
+}
+
+.header__search{
+    float: right;
+    margin-right: 2rem;
+    margin-bottom: 3.7rem;
+}
+
+.header__nav-wrap{
+    float: right;
+    width: 100%;
+}
+
+.header__nav{
+    float: right;
+}
+
+.header__search-button{
+    margin-top: 1rem;
+    margin-left: -2.5rem;
+}
+
+.right-container{
+    max-width: 79rem;
+}
+
+.banner__desc-button{
+    float: right;
+}
+
+/*custom grid layout*/
+.row {
+    width: 100%;
+    padding: 0 2rem;
+}
+    .row:not(:last-child) {
+      margin-bottom: 2rem; 
+    }
+    .row::after {
+      content: "";
+      display: table;
+      clear: both; 
+    }
+    .row [class^="col-"] { /*^ selects everything starting from "col-" (in this case)*/
+      float: left; 
+    }
+
+    .row [class^="col-"]:not(:last-child) {
+        margin-right: 0; 
+    }
+    .row [class^="col-"]{
+        width: 100% !important;
+        margin-bottom: 2rem;
+    }
+    /* .row .col-1-of-3 {
+      width: calc((100% - 2*3rem) / 3); 
+    }
+    .row .col-1-of-4 {
+      width: calc((100% - 3*3rem) / 4); 
+    } */
+
+.services{
+    padding: 4rem 0;
+}
+
+.service-photo{
+    height: 10rem;
+}
+
+.service-desc{
+    float: left;
+    max-width: 25rem;
+}
+
+.service-photo{
+    min-height: 13rem;
+}
+
+h1{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.horizontal-line{
+    padding: 0 2rem;
+}
+
+.horizontal-line span{
+    background: white;
+    padding: .4rem;
+}
+
+h1:before{
+    background-color: black;
+    display: block;
+    width: 100%;
+    height: .2rem;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+.indonectetus{
+    margin-top: 4rem;
+}
+
+.indonectetus-photo{
+    width: 30%;
+}
+
+.indonectetus-photo{
+    width: 100%;
+}
+
+.form-input{
+    padding: 0 1rem;
+}
+
+.footer{
+    margin-top: 8rem;
+    background-color: #eeeeee;
+}
+
+.footer__main{
+    padding: 5rem 0;
+}

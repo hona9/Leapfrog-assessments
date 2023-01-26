@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Tetris Clone</title>
+</head>
+<body>
+  <div class="container">
+    <div class="left-container">
+      <div class="hold-container container-background">
+        <div class="title">Hold</div>
+        <canvas id="hold" width="180" height="180"></canvas>
+      </div>
+      <div class="extra container-background">
+        <div class="title">Score <br><div class="score">0</div></div>
+        <div class="title">Lines <br><div class="lines">0</div></div>
+        <div class="title">Level <br><div class="level">0</div></div>
+        <div class="title">High Score <br><div class="highScore">0</div></div>
+      </div>
+    </div>
+    <div class="main container-background">
+      <canvas id="game" width="300" height="600"></canvas>
+    </div>
+    <div class="right-container">
+      <div class="next-container container-background">
+        <div class="title">Next</div>
+        <canvas id="next" width="180" height="350"></canvas>
+      </div>
+      <div class="menu container-background">
+        <button id="play" class="buttons">Play</button>
+        <button id="option" class="buttons">options</button>
+      </div>
+    </div>
+    <div class="controls">
+        <div class="title">Options</div>
+        <div class="control-options">
+          <div>Move left</div>
+          <button id="move-left"></button>
+        </div>
+        <div class="control-options">
+          <div>Move right</div>
+          <button id="move-right"></button>
+        </div>
+        <div class="control-options">
+          <div>Rotate piece</div>
+          <button id="rotate"></button>
+        </div>
+        <div class="control-options">
+          <div>Soft drop</div>
+          <button id="soft-drop"></button>
+        </div>
+        <div class="control-options">
+          <div>Hard drop</div>
+          <button id="hard-drop"></button>
+        </div>
+        <div class="control-options">
+          <div>Hold</div>
+          <button id="hold"></button>
+        </div>
+        <div class="control-options">
+          <div>Level</div>
+          <div><input type="number" id="level-length" min='0' max='10'></div>
+        </div>
+      <button id="applyChanges" class="buttons">Done</button>
+    </div>
+    <div class="desired-section">
+      <div>press the desired button</div>
+      <button id="cancel-button" class="buttons">Cancel</button>
+    </div>
+    <div class="scoreBoard">
+      <div>You have scored</div>
+      <div class="gameOverscore"></div>
+      <div id="newHighScore">New High Score</div>
+    </div>
+  </div>
+  <div id="overlay"></div>
+  <script src="./js/app.js"></script>
+  <script src="./js/shapes.js"></script>
+  <script src="./js/constants.js"></script>
+  <script src="./js/board.js"></script>
+  <script src="./js/nextSection.js"></script>
+  <script src="./js/holdSection.js"></script>
+  <script src="./js/working.js"></script>
+  <script src="./js/piece.js"></script>
+  <script src="./js/options.js"></script>
+</body>
+</html>
